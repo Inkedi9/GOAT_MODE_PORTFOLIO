@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber OS Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔐 LOGIN -->
+<div id="loginScreen">
+  <div class="login-box">
+
+    <h1>CYBER OS AUTH</h1>
+    <p id="subtitle">Initializing authentication module...</p>
+
+    <input id="user" placeholder="username" />
+    <input id="pass" type="password" placeholder="password" />
+
+    <button onclick="login()">AUTHENTICATE</button>
+
+    <div id="log"></div>
+
+  </div>
+</div>
+
+<!-- 🧠 HUD -->
+<div id="hud">
+  <div id="topbar">
+    <span>CYBER OS // PORTFOLIO</span>
+    <span>STATUS: ONLINE</span>
+  </div>
+
+  <div id="sidebar">
+    <button onclick="nav('labs')">LABS</button>
+    <button onclick="nav('arsenal')">ARSENAL</button>
+    <button onclick="nav('skills')">SKILLS</button>
+    <button onclick="nav('terminal')">TERMINAL</button>
+  </div>
+</div>
+
+<!-- 📡 LABS -->
+<section id="labs" class="section">
+  <h2>LAB PLATFORMS</h2>
+  <p>TryHackMe | HackTheBox | Root-Me</p>
+</section>
+
+<!-- ⚔️ ARSENAL -->
+<section id="arsenal" class="section">
+  <h2>ARSENAL TECHNIQUE</h2>
+  <p>Offensive | Defensive | System</p>
+</section>
+
+<!-- 📊 SKILLS -->
+<section id="skills" class="section">
+  <h2>SKILLS DASHBOARD</h2>
+
+  <div class="bar">Web Pentest <div class="fill w90"></div></div>
+  <div class="bar">Linux <div class="fill w80"></div></div>
+  <div class="bar">Networking <div class="fill w75"></div></div>
+</section>
+
+<!-- 💻 TERMINAL -->
+<section id="terminal" class="section">
+  <h2>TERMINAL</h2>
+  <div id="output"></div>
+  <input id="cmd" placeholder="type help...">
+</section>
+
+<!-- 📡 SOC -->
+<section id="soc" class="section">
+  <h2>📡 SOC DASHBOARD // SECURITY OPERATIONS CENTER</h2>
+
+  <div class="soc-grid">
+
+    <div class="box">
+      <h3>🟢 SYSTEM STATUS</h3>
+      <p id="status">ONLINE</p>
+    </div>
+
+    <div class="box">
+      <h3>⚠️ THREATS DETECTED</h3>
+      <p id="threats">0</p>
+    </div>
+
+    <div class="box">
+      <h3>🌐 NETWORK ACTIVITY</h3>
+      <p id="network">STABLE</p>
+    </div>
+
+    <div class="box">
+      <h3>🧠 SECURITY LEVEL</h3>
+      <p id="level">GREEN</p>
+    </div>
+
+  </div>
+
+  <div class="log-panel">
+    <h3>📜 LIVE LOG STREAM</h3>
+    <div id="logs"></div>
+  </div>
+
+</section>
+
+<!-- 📁 GITHUB -->
+<section id="github" class="section">
+  <h2>PROJECTS</h2>
+  <p>Portfolio_Hacker</p>
+  <p>CTF_Writeups</p>
+  <p>Web_Pentest_Lab</p>
+</section>
+
+<!-- 🛰️ MAP -->
+<section class="section">
+  <h2>THREAT MAP</h2>
+  <canvas id="mapCanvas"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
